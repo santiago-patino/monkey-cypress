@@ -15,9 +15,7 @@
         "pctBwChaos":12,
         "pctActions":16
     },
-    "integrationFolder": "./cypress/integration/monkey",
-    "pluginsFile": "./cypress/plugins/index.js",
     "pageLoadTimeout":120000,
-    "testFiles": "smart-monkey.js",
+    "specPattern": "./cypress/e2e/monkey/smart-monkey.cy.js",
     "videosFolder":"./results"
 }

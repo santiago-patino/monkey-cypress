@@ -13,10 +13,8 @@
         "pctSpKeys":16,
         "pctPgNav":16
     },
-    "integrationFolder": "./cypress/integration/monkey",
-    "pluginsFile": "./cypress/plugins/index.js",
     "pageLoadTimeout":120000,
     "defaultCommandTimeout":120000,
-    "testFiles": "monkey.js",
+    "specPattern": "./cypress/e2e/monkey",
     "videosFolder":"./results"
 }

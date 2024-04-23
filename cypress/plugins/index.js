@@ -18,6 +18,11 @@ var fs = require('fs');
 /**
  * @type {Cypress.PluginConfig}
  */
+
+if (!fs.existsSync(LOG_FILENAME)) {
+  fs.mkdirSync("./results", { recursive: true });
+  fs.writeFileSync(LOG_FILENAME, '');
+}
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
